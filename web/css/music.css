@@ -1,0 +1,129 @@
+
+body {
+    background: url(../images/banner.jpg) repeat;
+    padding: 100px 0px 30px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+.cd {
+    right: 100px;
+    top:200px;
+    position: absolute;
+    margin-top: 50px;
+}
+.cd > img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 155px;
+}
+
+
+.rotate {
+    -webkit-animation: myfirst 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transform-origin: 50% 50%;
+}
+video,
+audio {width: 90% ;
+    display: inline-block;
+    min-width: 50%;
+}
+
+@-webkit-keyframes myfirst {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.upload{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: rgba(225, 225, 225, 0.6);
+    margin-left: 50px;
+    margin-bottom: 5px;
+    width: 800px;
+    height: 50px;
+}
+
+.upload button{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 40px;
+    height: 30px;
+    margin: 10px;
+    float: left ;
+    background: #9d59c6;
+    border: 1px solid #a906f4;
+    text-align: right;
+}
+
+
+
+.upload input{
+    /*opacity: 0 ;*/
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    margin: 10px;
+    float: left ;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+.list {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: rgba(225, 225, 225, 0.6);
+    margin-left: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 1000px;
+    height: 500px;
+}
+
+.musicBean {
+    color: #292021;
+    font-size: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin: 10px;
+    background-color: rgba(140, 65, 244, 0.6);
+    width: 98%;
+    height: 100px;
+}
+
+.musicBean span {
+    top: 15px;
+    left: 50px;
+    position: relative;
+}
+
+.musicBean:hover {
+    background-color: #5e2869;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}

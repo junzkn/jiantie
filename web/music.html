@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="css/music.css" rel="stylesheet" type="text/css" media="all"/>
+    <style>
+        #toast {
+            width: 20%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: 1000;
+            color: white;
+            margin: auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="toast">
+    提示信息
+</div>
+<div class="upload">
+    <form id="uploadForm" enctype="multipart/form-data"><input id="file" type="file" name="file"></form>
+    <button onclick="upLoad()">上传音乐文件</button>
+</div>
+
+
+<div class="list" id="list">
+</div>
+<div id="cd-div" class="cd">
+    <img class="music" id="cd" src="images/banner.jpg" onclick="playPause(this)"/>
+    <audio id="v" src="music/1.mp3"></audio>
+</div>
+</body>
+
+
+<script src="js/music.js"></script>
+
+
+</html>
